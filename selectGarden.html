@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<head>
-<title>Select Garden</title>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+<html>
+  <head>
+	  <title>Select Gardens</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
 
 <body>
-<!--main logo at top of screen-->
-  <div class="mainHeader text-center">
-    <img src="selGarLogo.svg" alt="Select Garden logo" class="img-fluid d-block">
-  </div>
+<!--main header for website-->
+ <div class="header">
+   <nav class="navbar navbar-fixed-top">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <a class="navbar-brand img-responsive" href="#"><img src="images/selGarLogo.svg" alt="Select Garden logo"></a>
+       </div>
+      <ul class="nav navbar-nav .navbar-right">
+        <li class="active"><a href="selectGarden.html">Home</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:870-404-3888">870-404-3888</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
 
-<!--carousel THIS NEEDS TO BE LIMTED ON ITS SIZE SO IT IS CENTERED AND SHOWING A WHITE BORDER-->
-  <div id="carouselExamples" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  </ol>
-
+<div class="main-content">
+<!--carousel example of jobs-->
+  <div id="carouselExamples" class="carousel slide jumbotron" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
@@ -42,44 +48,41 @@
     </div>
 
 	<div class="item">
-      <img src="images/image5.jpg" alt="">
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-	<div class="item">
       <img src="images/image6.jpg" alt="">
       <div class="carousel-caption">
       </div>
     </div>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  </div>
+</div>
+<!--about section and services-->
+<div class="container-fluid about-section" >
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h2>About Us</h2>
+      <p>Welcome to Select Gardens. We are a design/build landscape company located in the twin lakes area of the ozarks.
+    We work with our client to realize their dreams or resolve their concerns, related to property bueatification.</p>
+      <p>Select Gardens is owned and operated by Larry Boyd, Horticulturist, trained at University of Arkanasas.</p>
+      <p>We believe in high quality at affordable prices. We believe ethics are an important part of business practices.</p>
+   </div>
+    <div class="col-md-6 text-center">
+    <h3>Services Offered</h3>
+    <ul>
+      <li>Landscape Design</li>
+      <li>Landscape Build/Installation</li>
+      <li>Plant Selection</li>
+      <li>Irrigation Design and Installation</li>
+      <li>General Mainenece</li>
+      <li>Plant Pathology and disease control</li>
+      <li>Residential and Commercial</li>
+    </div>
+  </div>
+</div>
 </div>
 
-<!--about section I WILL BE REWRITTING THIS INFORMATION AND FORMATTING INTO SOME KIND OF LIST-->
-<div class="about text-center">
-  <h2>About Us</h2>
-  <p>select gardens is a design/build landscape company located in the twin lakes area of the ozarks.
-we work with our cients to realize thier dreams,concerns, related to property bueatification.
-
-our services include,design,installation,plant selection, irrigation design and installation, general
-maintence, plant pathology and disease controll
-
-contact us for futher information about our services.
-
-our company is lead by l.g. boyd, horticulturist ,trained at university of arkansas. we believe in high
-quality at affordable prices. we believe ethics are an inportant part of business practices.</p>
-</div>
-
-<!--contact section NEEDS TO BE CENTERED AND SHORTENED, DEFAULT TEXT AREA SHOULD BE LARGER, SQUARE?-->
+<footer class="text-center">
+  <h3>&copy Select Gardens</h3>
+</footer>
 
       <!-- Bootstrap core JavaScript
     ================================================== -->

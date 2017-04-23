@@ -1,67 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Contact</title>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="contact.css">
-</head>
-<body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="selectGarden.html"><img src="selGarLogo.svg"></a>
+  <head>
+	  <title>Contact</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+	<!--main header for website-->
+  <div class="header">
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand img-responsive" href="#"><img src="images/selGarLogo.svg" alt="Select Garden logo"></a>
+        </div>
+       <ul class="nav navbar-nav .navbar-right">
+         <li class="active"><a href="selectGarden.html">Home</a></li>
+         <li><a href="testimonials.html">Testimonials</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <li><a href="tel:870-404-3888">870-404-3888</a></li>
+       </ul>
+     </div>
+   </nav>
+ </div>
+
+<div class="main-content">
+
+ <div class="container-fluid contact-section text-center">
+   <h1>Contact Us</h1>
+   <span class="glyphicon glyphicon-earphone"><a href="tel:870-404-3888">Phone: 870-404-3888</a></span><br>
+   <span class="glyphicon glyphicon-map-marker"> Select Garden-1234 Oak Road Pleasentville, US 10000</span>
+
+   <div class="row">
+     <div class="col-md-6 contact-left">
+       <iframe src="https://www.google.com/maps/place/141+AR-201,+Mountain+Home,+AR+72653/@36.3424926,-92.3882832,17z/data=!3m1!4b1!4m5!3m4!1s0x87d1d95eab091bb5:0x1da8b88e594a138!8m2!3d36.3424883!4d-92.3860945" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="selectGarden.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<h3>Contact Us</h3>
-<header>
-<p>Fill out the form below and we will contact you with a quote for your job.</p>
-</header>
+     <div class="col-md-6 contact-right">
 
-<form id="contact-form" action="" method="GET">
-	<div id="inputbox">
-	<div id="name">
-	<label for="username"></label>
-	<input type="text" class="form-control" placeholder="Name">	
-	</div>
-	<div id="email">
-	<label for="email"></label>
-	<input type="text" class="form-control" placeholder="Email" required>	
-	</div>
-	<div id="phone">
-		<label for="phone-number"></label>
-		<input type="text" class="form-control" placeholder="(555)555-5555" required>
-	</div>
-	<div id="message">
-		<label for="message"></label>
-		<textarea  class="form-control" placeholder="How can we help you?"></textarea>
-	</div>
-	<button type="submit" class="btn btn-success">Send</button>
-	</div>
-</form>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.122358691295!2d-73.97617688503571!3d40.781324079324406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f4b00f7a09%3A0xa27d8172624c5db1!2sAmerican+Museum+of+Natural+History!5e0!3m2!1sen!2sus!4v1492491255480" width="700" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-<br>
-<span class="glyphicon glyphicon-earphone"> Phone: 1-555-555-5555</span><br>
-<span class="glyphicon glyphicon-envelope"> Email: contact@selectgarden.com</span><br>
-<span class="glyphicon glyphicon-map-marker"> Select Garden-1234 Oak Road Pleasentville, US 10000</span>
+       <form id="contact-form" metod="GET">
+         <div class="form-group">
+             <label for="name">Name</label>
+             <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+           </div>
+
+         <div class="form-group">
+           <label for="emailLabel">Email address</label>
+           <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+         </div>
+
+         <div class="form-group row">
+         <label for="tel-input" class="col-form-label">Telephone</label>
+           <input class="form-control" type="tel" value="1-(555)-555-5555" id="phone" required>
+         </div>
+
+         <div class="form-group">
+           <label for="exampleTextarea">Enter Message</label>
+           <textarea class="form-control" id="textArea" label="textMessage" rows="6" required></textarea>
+         </div>
+
+         <button type="submit" class="btn btn-primary">Submit</button>
+       </form>
+     </div>
+   </div>
+ </div>
+ </div>
+
+ <footer class="text-center">
+   <h3>&copy Select Gardens</h3>
+ </footer>
+
+ <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
 </body>
 </html>
